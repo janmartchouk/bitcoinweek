@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,MAAM,EAAC,SAAS,EAAE,MAAM;EACpB,AAAA,IAAI,CAAC;IACD,SAAS,EAAE,GAAG;GAAG",
+    "sources": [
+        "bp-large.sass"
+    ],
+    "names": [],
+    "file": "bp-large.css"
+}

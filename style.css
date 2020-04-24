@@ -1,0 +1,427 @@
+html {
+  font-size: 10px;
+  background-color: white;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: white;
+}
+
+.nav-container {
+  background-color: none;
+  width: 100vw;
+  height: 9.5vh;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+}
+
+.nav {
+  height: 7.5vh;
+  width: 95%;
+  background: -webkit-gradient(linear, right top, left top, from(#7ed3b2), to(#b9e6d3));
+  background: linear-gradient(to left, #7ed3b2, #b9e6d3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1%;
+  border-radius: 15px;
+  z-index: 100;
+  -webkit-box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.2);
+  -webkit-transition: .2s;
+  transition: .2s;
+  position: relative;
+  right: .5vw;
+  top: 2vh;
+}
+
+.heading--primary, .nav__logo {
+  font-family: Bebas Neue;
+  font-weight: bold;
+}
+
+.nav__logo {
+  font-size: 3.5rem;
+  color: #f2f2f2;
+  letter-spacing: 3;
+}
+
+.nav__moblogo {
+  display: none;
+}
+
+.nav__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__item {
+  padding: 1.5px 1.5px 0;
+  background-color: none;
+  margin: 0 5px;
+  border-radius: 10px;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+}
+
+.nav__item:hover {
+  background-color: white;
+}
+
+.nav__item:hover > .nav__link {
+  color: #7ed3b2;
+}
+
+.nav__link {
+  color: white;
+  text-decoration: none;
+  font-family: "Baloo Tamma 2";
+  font-size: 2rem;
+  padding: 0rem 1rem;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+  margin: 0;
+}
+
+.nav__link:hover {
+  color: #7ed3b2;
+}
+
+.hamburger {
+  display: none;
+}
+
+section {
+  padding: 12% 15vw 15%;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(242, 242, 242, 0.2))), url("night.jpg");
+  background: linear-gradient(to right, rgba(242, 242, 242, 0.2) rgba(242, 242, 242, 0.5)), url("night.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin-bottom: -5%;
+  text-align: center;
+}
+
+.header__img {
+  position: relative;
+  bottom: 50%;
+  border-radius: 5px;
+}
+
+.header__title {
+  font-size: 20rem;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  color: white;
+  letter-spacing: 5;
+  text-align: center;
+}
+
+.header__text {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  font-size: 2.5rem !important;
+  font-family: Roboto Mono !important;
+  color: white !important;
+}
+
+.about {
+  background: white;
+  color: black;
+  -webkit-box-shadow: inset 0px 0px 114px -25px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0px 0px 114px -25px rgba(0, 0, 0, 0.2);
+  padding: 10% 15vw 15%;
+  -webkit-transform: skewY(5deg);
+          transform: skewY(5deg);
+}
+
+.about > * {
+  -webkit-transform: skewY(-5deg);
+          transform: skewY(-5deg);
+}
+
+.heading--secondary {
+  font-family: "Baloo Tamma 2";
+  font-size: 6rem;
+  color: white;
+}
+
+.heading--pink {
+  color: #7ed3b2;
+}
+
+.description {
+  font-size: 1.5rem;
+  font-family: "Roboto Mono";
+  width: 70%;
+  line-height: 2;
+}
+
+.text--white {
+  color: white;
+}
+
+.events {
+  background: -webkit-gradient(linear, left top, right bottom, from(#7ed3b2), to(#b9e6d3));
+  background: linear-gradient(to bottom right, #7ed3b2, #b9e6d3);
+  width: 100vw;
+  -webkit-transform: skewY(5deg);
+          transform: skewY(5deg);
+}
+
+.events > * {
+  -webkit-transform: skewY(-5deg);
+          transform: skewY(-5deg);
+}
+
+.event-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-flow: dense;
+  grid-column-gap: 4rem;
+  grid-row-gap: 4rem;
+}
+
+.event {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: .2s;
+  transition: .2s;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.event:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+  cursor: pointer;
+  -webkit-box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.2);
+}
+
+.event-img {
+  border-radius: 15px;
+  width: auto;
+  margin-right: 2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 10rem;
+}
+
+.event-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.event-title {
+  font-size: 3rem;
+  font-family: "Baloo Tamma 2";
+  color: #7ed3b2;
+  position: relative;
+  bottom: 1rem;
+}
+
+.event-title > a {
+  text-decoration: none;
+  color: #7ed3b2;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.event-title > a:hover {
+  color: #b9e6d3;
+}
+
+.event-desc {
+  font-family: Roboto Mono;
+  font-size: 1.5rem;
+  position: relative;
+  bottom: 1rem;
+}
+
+@media (max-width: 1300px) {
+  html {
+    font-size: 8px;
+  }
+  .nav-container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .nav {
+    height: 5vh;
+    width: auto;
+    margin-right: 3vw;
+    position: fixed;
+    background: #7ed3b2;
+  }
+  .nav__desklogo {
+    display: none;
+  }
+  .nav__moblogo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    font-size: 2.7rem;
+    position: fixed;
+    background: #b9e6d3;
+    height: 5vh;
+    border-radius: 15px;
+    padding: 1rem 3rem;
+    left: 2vh;
+    top: 2vh;
+  }
+}
+
+@media (max-width: 1020px) {
+  .event-list {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .event {
+    -webkit-box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.2);
+  }
+  .header {
+    -ms-grid-rows: min-content min-content;
+        grid-template-rows: -webkit-min-content -webkit-min-content;
+        grid-template-rows: min-content min-content;
+    justify-items: end;
+  }
+}
+
+@media (max-width: 720px) {
+  .event-list {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .header__title {
+    font-size: 10rem;
+  }
+  .nav {
+    display: none;
+  }
+  .description {
+    width: 100%;
+  }
+  .hamburger {
+    display: block;
+  }
+  .mobmenu {
+    background: -webkit-gradient(linear, left top, right bottom, from(#7ed3b2), to(#b9e6d3));
+    background: linear-gradient(to bottom right, #7ed3b2, #b9e6d3);
+    height: 100%;
+    position: fixed;
+    width: 0px;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    -webkit-box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  .mobmenu-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  .mob__link {
+    color: white;
+    font-size: 5rem;
+    text-decoration: none;
+    line-height: 2;
+    font-family: "Baloo Tamma 2";
+  }
+  .mobbutton {
+    position: fixed;
+    right: 4vw;
+    top: 2vh;
+    color: white;
+    background: #7ed3b2;
+    font-size: 3.5rem;
+    height: 5vh;
+    width: 5vh;
+    border-radius: 15px;
+    z-index: 100;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.2);
+  }
+}
+/*# sourceMappingURL=style.css.map */
