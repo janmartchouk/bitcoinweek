@@ -1,0 +1,28 @@
+.sponsors
+    width: 100%
+    padding-top: 5%
+    transform: skewY(5deg)
+    background: linear-gradient(to bottom right, $color-p, $color-t)
+    & > *
+        transform: skewY(-5deg)
+
+.sponsors-list
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    grid-auto-flow: dense
+    grid-column-gap: 8rem
+    grid-row-gap: 8rem
+    width: 100%
+
+    & > *
+        width: 70%
+        height: 10rem
+        background-size: contain
+        background-repeat: no-repeat
+        background-position: center
+
+.sponsor1, .sponsor2, .sponsor3, .sponsor4
+    background-image: url('forbes.png')
+    align-self: center
+    justify-self: center
+

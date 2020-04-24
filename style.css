@@ -1,5 +1,5 @@
 html {
-  font-size: 10px;
+  font-size: 9px;
   background-color: white;
   scroll-behavior: smooth;
 }
@@ -8,158 +8,8 @@ body {
   background: white;
 }
 
-.nav-container {
-  background-color: none;
-  width: 100vw;
-  height: 9.5vh;
-  z-index: 100;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: fixed;
-}
-
-.nav {
-  height: 7.5vh;
-  width: 95%;
-  background: -webkit-gradient(linear, right top, left top, from(#7ed3b2), to(#b9e6d3));
-  background: linear-gradient(to left, #7ed3b2, #b9e6d3);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 1%;
-  border-radius: 15px;
-  z-index: 100;
-  -webkit-box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.2);
-  -webkit-transition: .2s;
-  transition: .2s;
-  position: relative;
-  right: .5vw;
-  top: 2vh;
-}
-
-.heading--primary, .nav__logo {
-  font-family: Bebas Neue;
-  font-weight: bold;
-}
-
-.nav__logo {
-  font-size: 3.5rem;
-  color: #f2f2f2;
-  letter-spacing: 3;
-}
-
-.nav__moblogo {
-  display: none;
-}
-
-.nav__ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.nav__item {
-  padding: 1.5px 1.5px 0;
-  background-color: none;
-  margin: 0 5px;
-  border-radius: 10px;
-  -webkit-transition: .1s ease-in-out;
-  transition: .1s ease-in-out;
-}
-
-.nav__item:hover {
-  background-color: white;
-}
-
-.nav__item:hover > .nav__link {
-  color: #7ed3b2;
-}
-
-.nav__link {
-  color: white;
-  text-decoration: none;
-  font-family: "Baloo Tamma 2";
-  font-size: 2rem;
-  padding: 0rem 1rem;
-  -webkit-transition: .1s ease-in-out;
-  transition: .1s ease-in-out;
-  margin: 0;
-}
-
-.nav__link:hover {
-  color: #7ed3b2;
-}
-
-.hamburger {
-  display: none;
-}
-
 section {
   padding: 12% 15vw 15%;
-}
-
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(242, 242, 242, 0.2))), url("night.jpg");
-  background: linear-gradient(to right, rgba(242, 242, 242, 0.2) rgba(242, 242, 242, 0.5)), url("night.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  margin-bottom: -5%;
-  text-align: center;
-}
-
-.header__img {
-  position: relative;
-  bottom: 50%;
-  border-radius: 5px;
-}
-
-.header__title {
-  font-size: 20rem;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1 / 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1 / 2;
-  color: white;
-  letter-spacing: 5;
-  text-align: center;
-}
-
-.header__text {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2 / 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1 / 2;
-  font-size: 2.5rem !important;
-  font-family: Roboto Mono !important;
-  color: white !important;
 }
 
 .about {
@@ -183,8 +33,8 @@ section {
   color: white;
 }
 
-.heading--pink {
-  color: #7ed3b2;
+.heading--colored {
+  color: #4c0b07;
 }
 
 .description {
@@ -198,10 +48,60 @@ section {
   color: white;
 }
 
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(76, 11, 7, 0.2))), url("night.jpg");
+  background: linear-gradient(to right, rgba(76, 11, 7, 0.2) rgba(76, 11, 7, 0.5)), url("night.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin-bottom: -5%;
+  text-align: center;
+}
+
+.header__img {
+  position: relative;
+  bottom: 50%;
+  border-radius: 5px;
+}
+
+.header__title {
+  font-size: 15rem;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  color: white;
+  letter-spacing: 5;
+  text-align: center;
+}
+
+.header__text {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  font-size: 2.5rem !important;
+  font-family: Roboto Mono !important;
+  color: white !important;
+}
+
 .events {
-  background: -webkit-gradient(linear, left top, right bottom, from(#7ed3b2), to(#b9e6d3));
-  background: linear-gradient(to bottom right, #7ed3b2, #b9e6d3);
-  width: 100vw;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right bottom, from(#e2be70), to(#d58747));
+  background: linear-gradient(to bottom right, #e2be70, #d58747);
   -webkit-transform: skewY(5deg);
           transform: skewY(5deg);
 }
@@ -233,6 +133,8 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: 0px 4px 12.5px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 12.5px 0px rgba(0, 0, 0, 0.1);
 }
 
 .event:hover {
@@ -241,6 +143,35 @@ section {
   cursor: pointer;
   -webkit-box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.2);
+}
+
+.addevent {
+  background: none !important;
+  border: 5px solid white;
+  width: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.addevent > span {
+  color: white;
+  font-size: 10rem;
+}
+
+.addevent__text {
+  color: white;
+  font-size: 3.5rem;
+  font-family: "Baloo Tamma 2";
+}
+
+.addevent:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.addevent-link {
+  color: white;
+  text-decoration: none;
 }
 
 .event-img {
@@ -268,20 +199,20 @@ section {
 .event-title {
   font-size: 3rem;
   font-family: "Baloo Tamma 2";
-  color: #7ed3b2;
+  color: #e2be70;
   position: relative;
   bottom: 1rem;
 }
 
 .event-title > a {
   text-decoration: none;
-  color: #7ed3b2;
+  color: #e2be70;
   -webkit-transition: .2s;
   transition: .2s;
 }
 
 .event-title > a:hover {
-  color: #b9e6d3;
+  color: #d58747;
 }
 
 .event-desc {
@@ -291,6 +222,175 @@ section {
   bottom: 1rem;
 }
 
+.nav-container {
+  background-color: none;
+  width: 99vw;
+  height: 9.5vh;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+}
+
+.nav {
+  height: 7.5vh;
+  width: 95%;
+  background: -webkit-gradient(linear, right top, left top, from(#e2be70), to(#d58747));
+  background: linear-gradient(to left, #e2be70, #d58747);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1%;
+  border-radius: 15px;
+  z-index: 100;
+  -webkit-box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.2);
+  -webkit-transition: .2s;
+  transition: .2s;
+  position: relative;
+  top: 2vh;
+}
+
+.heading--primary, .nav__logo {
+  font-family: Bebas Neue;
+  font-weight: bold;
+}
+
+.nav__logo {
+  font-size: 3.5rem;
+  color: #4c0b07;
+  letter-spacing: 3;
+  text-decoration: none;
+}
+
+.nav__moblogo {
+  display: none;
+}
+
+.nav__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav__item {
+  padding: 1.5px 1.5px 0;
+  background-color: none;
+  margin: 0 5px;
+  border-radius: 10px;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+}
+
+.nav__item:hover {
+  background-color: white;
+}
+
+.nav__item:hover > .nav__link {
+  color: #e2be70;
+}
+
+.nav__link {
+  color: white;
+  text-decoration: none;
+  font-family: "Baloo Tamma 2";
+  font-size: 3rem;
+  padding: 0rem 1rem;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+  margin: 0;
+}
+
+.nav__link:hover {
+  color: #e2be70;
+}
+
+.hamburger {
+  display: none;
+}
+
+.sponsors {
+  width: 100%;
+  padding-top: 5%;
+  -webkit-transform: skewY(5deg);
+          transform: skewY(5deg);
+  background: -webkit-gradient(linear, left top, right bottom, from(#e2be70), to(#d58747));
+  background: linear-gradient(to bottom right, #e2be70, #d58747);
+}
+
+.sponsors > * {
+  -webkit-transform: skewY(-5deg);
+          transform: skewY(-5deg);
+}
+
+.sponsors-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-flow: dense;
+  grid-column-gap: 8rem;
+  grid-row-gap: 8rem;
+  width: 100%;
+}
+
+.sponsors-list > * {
+  width: 70%;
+  height: 10rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.sponsor1, .sponsor2, .sponsor3, .sponsor4 {
+  background-image: url("forbes.png");
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.footer {
+  padding: 5% 10% 3%;
+}
+
+.footer-text {
+  font-family: Roboto Mono;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e2be70;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #4c0b07;
+  border-radius: 15px;
+}
+
+/* Handle on hover */
 @media (max-width: 1300px) {
   html {
     font-size: 8px;
@@ -305,7 +405,7 @@ section {
     width: auto;
     margin-right: 3vw;
     position: fixed;
-    background: #7ed3b2;
+    background: #e2be70;
   }
   .nav__desklogo {
     display: none;
@@ -318,12 +418,13 @@ section {
         align-content: center;
     font-size: 2.7rem;
     position: fixed;
-    background: #b9e6d3;
+    background: #d58747;
     height: 5vh;
     border-radius: 15px;
     padding: 1rem 3rem;
     left: 2vh;
     top: 2vh;
+    text-decoration: none;
   }
 }
 
@@ -362,8 +463,8 @@ section {
     display: block;
   }
   .mobmenu {
-    background: -webkit-gradient(linear, left top, right bottom, from(#7ed3b2), to(#b9e6d3));
-    background: linear-gradient(to bottom right, #7ed3b2, #b9e6d3);
+    background: -webkit-gradient(linear, left top, right bottom, from(#e2be70), to(#d58747));
+    background: linear-gradient(to bottom right, #e2be70, #d58747);
     height: 100%;
     position: fixed;
     width: 0px;
@@ -405,7 +506,7 @@ section {
     right: 4vw;
     top: 2vh;
     color: white;
-    background: #7ed3b2;
+    background: #e2be70;
     font-size: 3.5rem;
     height: 5vh;
     width: 5vh;
@@ -422,6 +523,9 @@ section {
             align-items: center;
     -webkit-box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 8px 25px 0px rgba(0, 0, 0, 0.2);
+  }
+  ::-webkit-scrollbar {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

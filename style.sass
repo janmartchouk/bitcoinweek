@@ -3,121 +3,25 @@
 // $color-t: #ad62aa
 // $bg: #edd5dd
 
-$color-p: #7ed3b2
-$color-s: #f2f2f2
-$color-t: #b9e6d3
+$color-p: #e2be70
+$color-s: #4c0b07
+$color-t: #d58747
 $bg: #ef6c57
 
 
 
 html
-    font-size: 10px
+    font-size: 9px
     background-color: white
     scroll-behavior: smooth
 
 body
     background: white
 
-.nav-container
-    background-color: none
-    width: 100vw
-    height: 9.5vh
-    z-index: 100
-    display: flex
-    justify-content: center
-    position: fixed
 
-.nav
-    height: 7.5vh
-    width: 95%
-    background: linear-gradient(to left, $color-p, $color-t)
-    display: flex
-    justify-content: space-between
-    align-items: center
-    padding: 0 1%
-    border-radius: 15px
-    z-index: 100
-    box-shadow: 0px 8px 25px 0px rgba(0,0,0,0.2)
-    transition: .2s
-    position: relative
-    right: .5vw
-    top: 2vh
-
-
-.heading--primary, .nav__logo
-    font-family: Bebas Neue
-    font-weight: bold
-
-.nav__logo
-    font-size: 3.5rem
-    color: $color-s
-    letter-spacing: 3
-
-.nav__moblogo
-    display: none
-
-.nav__ul
-    display: flex
-    align-items: center
-
-.nav__item
-    padding: 1.5px 1.5px 0
-    background-color: none
-    margin: 0 5px
-    border-radius: 10px
-    transition: .1s ease-in-out
-    &:hover
-        background-color: white
-    &:hover > .nav__link
-        color: $color-p
-
-.nav__link
-    color: white
-    text-decoration: none
-    font-family: "Baloo Tamma 2"
-    font-size: 2rem
-    padding: 0rem 1rem
-    transition: .1s ease-in-out
-    margin: 0
-    &:hover
-        color: $color-p
-
-.hamburger
-    display: none
 
 section
     padding: 12% 15vw 15%
-
-.header
-    display: flex
-    justify-content: center
-    align-items: center
-    background: linear-gradient(to right, rgba($color-s, 0.2) rgba($color-s,0.5)), url('night.jpg')
-    background-size: cover
-    background-position: center
-    height: 100vh
-    margin-bottom: -5%
-    text-align: center
-
-.header__img
-    position: relative
-    bottom: 50%
-    border-radius: 5px
-
-.header__title
-    font-size: 20rem
-    grid-row: 1 / 2
-    grid-column: 1 / 2
-    color: white
-    letter-spacing: 5
-    text-align: center
-
-.header__text
-    grid-row: 2 / 3
-    grid-column: 1 / 2 
-    font-size: 2.5rem !important
-    font-family: Roboto Mono !important
-    color: white !important
 
 .about
     background: white
@@ -134,8 +38,8 @@ section
     font-size: 6rem
     color: white
 
-.heading--pink
-    color: $color-p
+.heading--colored
+    color: $color-s
 
 .description
     font-size: 1.5rem
@@ -146,15 +50,20 @@ section
 .text--white
     color: white
 
-.events
-    background: linear-gradient(to bottom right, $color-p, $color-t)
-    width: 100vw
-    transform: skewY(5deg)
-    & > *
-        transform: skewY(-5deg)
 
+
+
+@import header
 
 @import events
+
+@import nav
+
+@import sponsors    
+
+@import footer
+
+@import scroller
 
 @import bp-huge
 
