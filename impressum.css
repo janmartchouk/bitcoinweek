@@ -1,0 +1,23 @@
+h1 {
+  font-family: Lekton;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+}
+
+* {
+  font-family: Lekton;
+}
+
+html {
+  background-color: #ccc;
+}
+
+body {
+  max-width: 60%;
+  margin-left: 20%;
+  background: white;
+  padding: 5%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+/*# sourceMappingURL=impressum.css.map */
