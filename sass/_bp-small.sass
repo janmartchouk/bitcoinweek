@@ -1,0 +1,56 @@
+@media(max-width: 500px)
+    
+    html
+        font-size: 7px
+
+    .header
+        padding: 0
+        padding-top: 30%
+
+        &__title
+            text-align: center
+
+    .section
+        margin: 0
+
+    .nav
+
+        &__list
+            display: none
+
+    .mob
+
+        &__btn
+            display: block
+            color: $yellow
+            font-size: 5rem
+            margin-right: 2rem
+
+        &__menu
+            display: block
+            height: 100vh
+            width: 100vw
+            background-color: $blue
+            z-index: 99
+            position: fixed
+            top: 0 
+            right: 0
+            width: 0
+            transition: .1s ease-in-out
+            overflow: hidden
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+
+        &__list
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+
+        &__link
+            color: $white
+            font-size: 5rem
+            text-decoration: none
+            font-family: Lekton

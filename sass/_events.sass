@@ -1,0 +1,27 @@
+.events
+    background-color: $blue
+
+    &__header
+        color: $yellow
+    
+    &__list
+        columns: 2
+        text-align: center
+        
+.event
+    
+    &:not(:nth-child(1))
+        margin-top: 20px
+
+    &__link
+        font-family: Lekton
+        text-decoration: none
+        color: $white
+        font-size: 3rem
+        padding: 1% 25%
+        border-bottom: 10px solid transparent
+
+        &:hover
+            background-color: $yellow
+            color: $blue
+            border-bottom: 10px solid $darkyellow

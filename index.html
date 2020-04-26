@@ -19,6 +19,61 @@
             <li class="nav__item"><a href="#Sponsors" class="nav__link">Sponsors</a></li>
             <li class="nav__item"><a href="#Contact" class="nav__link">Contact</a></li>
         </ul>
+        <span class="mdi mdi-menu mob__btn" onclick="toggleMenu()"></span>
     </nav>
+    <div class="mob__menu">
+        <ul class="mob__list">
+            <li onclick="closeMenu()" class="mob__item"><a href="#About" class="mob__link">About</a></li>
+            <li onclick="closeMenu()" class="mob__item"><a href="#Events" class="mob__link">Events</a></li>
+            <li onclick="closeMenu()" class="mob__item"><a href="#Highlights" class="mob__link">Highlights</a></li>
+            <li onclick="closeMenu()" class="mob__item"><a href="#Sponsors" class="mob__link">Sponsors</a></li>
+            <li onclick="closeMenu()" class="mob__item"><a href="#Contact" class="mob__link">Contact</a></li>
+        </ul>
+    </div>
+    <section class="header" id="Header">
+        <div class="header__square">
+            <h1 class="header__title">German Bitcoin Week</h1>
+        </div>
+        <div class="header__square2">
+            <h2 class="header__desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</h2>
+        </div>
+        <a href="#" class="header__btn">Sign Up &rarr;</a>
+    </section>
+    <section class="section about" id="About">
+        <h2 class="section__header about__header">About</h2>
+        <p class="section__content about__content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+    </section>
+    <section class="section events" id="Events">
+        <h2 class="section__header events__header">Events</h2>
+        <ul class="section__list events__list">
+            <li class="event"><a href="#" class="event__link">Event1</a></li>
+            <li class="event"><a href="#" class="event__link">Event2</a></li>
+            <li class="event"><a href="#" class="event__link">Event3</a></li>
+            <li class="event"><a href="#" class="event__link">Event4</a></li>
+            <li class="event"><a href="#" class="event__link">Event5</a></li>
+            <li class="event"><a href="#" class="event__link">Event6</a></li>
+        </ul>
+    </section>
+    <section class="section highlights" id="Highlights">
+        <h2 class="section__header highlights__header">Highlights</h2>
+        <p class="section__content highlights__content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+    </section>
+    <section class="section sponsors">
+        <h2 class="section__header sponsors__header">Sponsors</h2>
+        <img src="img/forbes.png" alt="forbes" class="sponsor sponsor1">
+        <img src="img/forbes.png" alt="forbes" class="sponsor sponsor2">
+        <img src="img/forbes.png" alt="forbes" class="sponsor sponsor3">
+        <img src="img/forbes.png" alt="forbes" class="sponsor sponsor4">
+    </section>
+    <footer class="section footer" id="Contact">
+        <h2 class="section__header footer__header">Contact</h2>
+        <p class="section__content footer__content">
+            Copyright 2020<br>
+            <a href="/impressum.html">Impressum</a><br>
+            +49 000 000 00<br>
+            <a href="mailto:contact@bitcoinweek.de">contact@bitcoinweek.de</a>
+        </p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

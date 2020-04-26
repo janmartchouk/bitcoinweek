@@ -1,0 +1,30 @@
+@media(max-width: 720px)
+    .header
+        grid-template-columns: 1fr
+        grid-template-rows: min-content min-content min-content
+        margin-bottom: -40vw
+        padding-top: 20%
+
+        &__square
+            grid-column: 1 / 2
+            grid-row: 1 / 2
+
+        &__square2
+            grid-column: 1 / 2
+            grid-row: 2 / 3
+            padding: 10% 5%
+
+        &__desc
+            font-size: 2rem
+            text-align: center
+
+        &__btn
+            grid-row: 3 / 3
+            width: 35%
+            justify-self: center
+            margin-top: 5%
+            height: 75%
+            padding: 0
+
+    .section
+        margin: 10% 10%
