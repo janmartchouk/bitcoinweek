@@ -6,44 +6,52 @@
     <link href="https://fonts.googleapis.com/css2?family=Lekton:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="minireset.min.css">
     <link rel="stylesheet" href="fonts/Argon/font.css">
+    <link rel="stylesheet" href="fonts/Marvin Visions/font.css">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <nav class="nav">
-        <h1 class="nav__logo">B</h1>
+        <h1 class="nav__logo"><img src="img/logo.png" alt="Logo"></h1>
         <ul class="nav__list">
             <li class="nav__item"><a href="#About" class="nav__link">About</a></li>
             <li class="nav__item"><a href="#Events" class="nav__link">Events</a></li>
             <li class="nav__item"><a href="#Highlights" class="nav__link">Highlights</a></li>
             <li class="nav__item"><a href="#Sponsors" class="nav__link">Sponsors</a></li>
+            <li class="nav__item"><a href="#Team" class="nav__link">Team</a></li>
             <li class="nav__item"><a href="#Contact" class="nav__link">Contact</a></li>
         </ul>
         <span class="mdi mdi-menu mob__btn" onclick="toggleMenu()"></span>
     </nav>
     <div class="mob__menu">
         <ul class="mob__list">
-            <li onclick="closeMenu()" class="mob__item"><a href="#About" class="mob__link">About</a></li>
+            <li onclick="closeMenu()" class="mob__item"><a href="#AboutS" class="mob__link">About</a></li>
             <li onclick="closeMenu()" class="mob__item"><a href="#Events" class="mob__link">Events</a></li>
             <li onclick="closeMenu()" class="mob__item"><a href="#Highlights" class="mob__link">Highlights</a></li>
             <li onclick="closeMenu()" class="mob__item"><a href="#Sponsors" class="mob__link">Sponsors</a></li>
+            <li onclick="closeMenu()" class="mob__item"><a href="#Team" class="mob__link">Team</a></li>
             <li onclick="closeMenu()" class="mob__item"><a href="#Contact" class="mob__link">Contact</a></li>
         </ul>
     </div>
     <section class="header" id="Header">
+        <!-- <svg class="header-svg" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080"><defs><style>.cls-1{fill:#ff1f26;}.cls-2{fill:#ff0;}.cls-3{fill:#0071bc;}</style></defs><rect class="cls-1" width="1920" height="1080"/><polygon class="cls-2" points="0 517 0 0 1920 0 0 517"/><path class="cls-3" d="M1920,1080V601.17A908.48,908.48,0,0,0,1691,572c-357.75,0-667.11,207.13-814.73,508Z" transform="translate(0 0)"/></svg> -->
+        <div class="header__triangle"></div>
+        <div class="header__circle"></div>
         <div class="header__square">
             <h1 class="header__title">German Bitcoin Week</h1>
         </div>
-        <div class="header__square2">
+        <!-- <div class="header__square2">
             <h2 class="header__desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</h2>
-        </div>
-        <a href="#" class="header__btn">Sign Up &rarr;</a>
+        </div> -->
+        <!-- <a href="#" class="header__btn">Sign Up &rarr;</a> -->
+        <span class="highlights__link" id="About"></span>
     </section>
-    <section class="section about" id="About">
+    <section class="section about" id="AboutS">
         <h2 class="section__header about__header">About</h2>
         <p class="section__content about__content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        <span class="highlights__link" id="Events"></span>
     </section>
-    <section class="section events" id="Events">
+    <section class="section events">
         <h2 class="section__header events__header">Events</h2>
         <ul class="section__list events__list">
             <li class="event"><a href="#" class="event__link">Event1</a></li>
@@ -53,10 +61,12 @@
             <li class="event"><a href="#" class="event__link">Event5</a></li>
             <li class="event"><a href="#" class="event__link">Event6</a></li>
         </ul>
+        <span class="highlights__link" id="Highlights"></span>
     </section>
-    <section class="section highlights" id="Highlights">
+    <section class="section highlights">
         <h2 class="section__header highlights__header">Highlights</h2>
         <p class="section__content highlights__content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        <span class="highlights__link" id="Sponsors"></span>
     </section>
     <section class="section sponsors">
         <h2 class="section__header sponsors__header">Sponsors</h2>
@@ -64,6 +74,28 @@
         <img src="img/forbes.png" alt="forbes" class="sponsor sponsor2">
         <img src="img/forbes.png" alt="forbes" class="sponsor sponsor3">
         <img src="img/forbes.png" alt="forbes" class="sponsor sponsor4">
+    </section>
+    <span class="highlights__link" id="Team"></span>
+    <section class="section team">
+        <h2 class="section__header team__header">Team</h2>
+        <div class="team__members">
+            <div class="team__member">
+                <img src="img/andreired.png" alt="AM" class="team__pic">
+                <p class="team__name">Andrei <br>Martchouk</p>
+            </div>
+            <div class="team__member oskar">
+                <img src="img/oskaryellow.png" alt="OG" class="team__pic">
+                <p class="team__name">Oskar <br>Giese</p>
+            </div>
+            <div class="team__member">
+                <img src="img/jeffblue.png" alt="JG" class="team__pic">
+                <p class="team__name">Jeff <br> Gallas</p>
+            </div>
+            <div class="team__member">
+                <img src="img/veronica.png" alt="VK" class="team__pic">
+                <p class="team__name">Veronika <br>Kütt</p>
+            </div>
+        </div>
     </section>
     <footer class="section footer" id="Contact">
         <h2 class="section__header footer__header">Contact</h2>

@@ -1,17 +1,16 @@
-.mob__menu, .mob__btn
-    display: none
+
     
 .nav
-    background-color: $red
+    background-color: none
     width: 100vw
-    height: 10rem
+    height: auto
     display: flex
     justify-content: space-between
     align-items: center
     position: fixed
     top: 0
     left: 0
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1), 0 6px 6px rgba(0,0,0,0.1)
+    // box-shadow: 0 10px 20px rgba(0,0,0,0.1), 0 6px 6px rgba(0,0,0,0.1)
     z-index: 100
 
     &__list
@@ -22,7 +21,7 @@
         margin-right: 2%
 
     &__link
-        color: $yellow
+        color: $black
         font-size: 2.5rem
         font-family: Lekton
         font-weight: bold
@@ -34,9 +33,23 @@
             color: $red
 
     &__logo
-        color: $yellow
-        font-size: 5rem
-        font-family: Argon
-        margin-left: 3rem
-        margin-bottom: .5rem
-        cursor: pointer
+        width: 5rem
+        height: 5rem
+        background-color: white
+        border-radius: 100%
+        padding: 1rem
+        display: flex
+        justify-content: center
+        align-items: center
+        position: relative
+        top: 1rem
+        left: 3rem
+
+        & > img
+            height: 100%
+            width: auto
+            position: relative
+            right: 2px
+
+.mob__menu, .mob__btn
+    display: none

@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Marvin Visions Big';
+    src: url('MarvinVisionsBig-Bold.woff2') format('woff2'),
+        url('MarvinVisionsBig-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Marvin Visions Big';
+    src: url('MarvinVisionsBig-Bold.woff2') format('woff2'),
+        url('MarvinVisionsBig-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
