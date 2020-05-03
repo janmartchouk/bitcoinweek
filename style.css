@@ -3,6 +3,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden !important;
+}
+
 .section {
   margin: 10% 20%;
   padding: 5%;
@@ -168,13 +172,13 @@ html {
 }
 
 .header__square2 {
-  -ms-grid-row: 5;
-  -ms-grid-row-span: 6;
-  grid-row: 5 / 11;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
-  grid-column: 1 / 5;
-  background-color: #146eaa;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 8;
+  grid-row: 3 / 11;
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 1;
+  grid-column: 9 / 10;
+  background-color: none;
   width: 100%;
   height: 100%;
   z-index: 10;
@@ -189,8 +193,9 @@ html {
 
 .header__desc {
   font-family: Lekton;
-  color: #f0c800;
+  color: black;
   font-size: 2vw;
+  line-height: 1;
 }
 
 .header__btn {
@@ -437,7 +442,19 @@ html {
     font-size: 8px;
   }
   .header__title {
-    font-size: 17vw;
+    font-size: 13vw;
+  }
+  .header__square2 {
+    -ms-grid-column: 10;
+    -ms-grid-column-span: 1;
+    grid-column: 10 / 11;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .team {
+    width: 90vw;
+    margin: 40rem 5rem 10rem;
   }
 }
 
@@ -447,6 +464,11 @@ html {
   }
   .header {
     height: 100vh;
+  }
+  .header__desc {
+    font-size: 3.5rem;
+    position: relative;
+    top: 1rem;
   }
   .section {
     margin: 10% 5%;
@@ -481,17 +503,37 @@ html {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    padding: 0;
+    position: relative;
   }
   .header__title {
     text-align: center;
-    position: relative;
-    left: -8rem;
+  }
+  .header__title::after {
+    content: "Frankfurt, 21-28 August";
+    font-family: Lekton;
+    display: block;
+    font-size: 5rem;
+    letter-spacing: 1;
+    margin-top: 3rem;
+  }
+  .header__square {
+    position: absolute;
+    left: 0%;
+    top: -5%;
+  }
+  .header__square2 {
+    display: none;
   }
   .mob__btn {
     display: block !important;
@@ -550,7 +592,7 @@ html {
     width: 100vw;
   }
   .team__header {
-    display: block !important;
+    display: inline-block !important;
     -webkit-transform: none;
             transform: none;
     margin: 0;
@@ -561,10 +603,10 @@ html {
     font-size: 10rem;
   }
   .team__members {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-gap: 3rem;
   }
   .team__member {

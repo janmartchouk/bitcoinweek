@@ -11,13 +11,31 @@
     .header
 
         display: flex
+        flex-direction: column
         align-items: center
         justify-content: center
+        padding: 0
+        position: relative
 
         &__title
             text-align: center
-            position: relative
-            left: -8rem
+
+            &::after
+                content: "Frankfurt, 21-28 August"
+                font-family: Lekton
+                display: block
+                font-size: 5rem
+                letter-spacing: 1
+                margin-top: 3rem
+
+
+        &__square
+            position: absolute
+            left: 0%
+            top: -5%
+
+        &__square2
+            display: none
 
     .mob
 
@@ -68,7 +86,7 @@
         width: 100vw
 
         &__header
-            display: block !important
+            display: inline-block !important
             transform: none
             margin: 0
             padding: 0
@@ -78,8 +96,8 @@
             font-size: 10rem
         
         &__members
-            grid-template-columns: 1fr 1fr
-            grid-template-rows: 1fr 1fr
+            grid-template-columns: 1fr
+            grid-template-rows: 1fr 1fr 1fr 1fr
             grid-gap: 3rem
 
         &__member
