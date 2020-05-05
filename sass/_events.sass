@@ -7,22 +7,44 @@
     
     &__list
         columns: 2
-        text-align: center
+        text-align: left
+        position: relative
+        left: 20px
         
 .event
     
-    &:not(:nth-child(1))
-        margin-top: 20px
+    border-left: 5px solid $blue
+    position: relative
 
-    &__link
+    &::before
+        width: 2rem
+        height: 2rem
+        content: ""
+        background-color: $blue
+        border-radius: 100%
+        position: absolute
+        left: -10px
+        top: 30%
+
+    &:not(:nth-child(1))
+        margin-top: 0
+
+
+    &__link, &__date
         font-family: Lekton
         text-decoration: none
         color: $black
         font-size: 3rem
-        padding: 1% 25%
-        border-bottom: 10px solid transparent
+        // padding: 1% 0 1% 25%
+        padding: 0 2%
 
+    &__link
         &:hover
-            background-color: $yellow
             color: $blue
-            border-bottom: 10px solid $darkyellow
+            text-decoration: underline
+
+    &__date
+        text-transform: italic
+        color: #818181
+        padding-left: 20px
+
