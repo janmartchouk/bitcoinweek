@@ -2,14 +2,39 @@
     background-color: $blue !important
     width: 100vw
     margin: 0
-    padding: 50px 10rem
+    padding: 50px 25%
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 1fr
+    grid-column-gap: 6rem
 
     &__header
         color: $white !important
         letter-spacing: 3
+        position: relative
+        right: 1rem
+
+    &__info
+        grid-column: 1 / 2
+        grid-row: 1 / 2
 
     &__content
+
         color: $white
 
         & > a 
             color: $yellow
+
+    &__team
+        grid-column: 2 / 3
+        grid-row: 1 / 2
+        align-self: center
+            
+
+    &__member
+
+        & > a
+            font-family: Lekton
+            font-size: 2rem
+            line-height: 1.5
+            color: $white

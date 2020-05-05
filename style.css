@@ -29,6 +29,10 @@ body {
   color: black;
 }
 
+.sponsors {
+  display: none !important;
+}
+
 .nav {
   background-color: none;
   width: 100vw;
@@ -434,12 +438,30 @@ body {
   background-color: #146eaa !important;
   width: 100vw;
   margin: 0;
-  padding: 50px 10rem;
+  padding: 50px 25%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-column-gap: 6rem;
 }
 
 .footer__header {
   color: white !important;
   letter-spacing: 3;
+  position: relative;
+  right: 1rem;
+}
+
+.footer__info {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
 }
 
 .footer__content {
@@ -448,6 +470,25 @@ body {
 
 .footer__content > a {
   color: #f0c800;
+}
+
+.footer__team {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.footer__member > a {
+  font-family: Lekton;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: white;
 }
 
 @media (max-width: 1360px) {
@@ -481,20 +522,24 @@ body {
   html {
     font-size: 6px;
   }
+  body {
+    overflow-x: hidden !important;
+  }
   .header {
-    height: 100vh;
+    height: 70vh;
   }
   .header__desc {
     font-size: 3.5rem;
     position: relative;
     top: 1rem;
+    width: 50vw;
   }
   .section {
     margin: 10% 5%;
   }
   .sponsors {
-    margin: 30rem calc(5% + 10vw) 30rem 10vw;
-    width: 80vw;
+    margin: 30rem 10vw 30rem 15vw;
+    width: 70vw;
   }
   .team__members {
     -ms-grid-columns: 1fr 1fr;
@@ -504,6 +549,7 @@ body {
   }
   .footer {
     margin: 0;
+    padding: 50px 10%;
   }
 }
 
@@ -537,6 +583,7 @@ body {
   }
   .header__title {
     text-align: center;
+    width: 100vw;
   }
   .header__title::after {
     content: "Frankfurt, 28. 08 bis 6. 09";
@@ -545,6 +592,10 @@ body {
     font-size: 5rem;
     letter-spacing: 1;
     margin-top: 3rem;
+    -webkit-transform: translateX(5%);
+            transform: translateX(5%);
+    width: 70vw;
+    text-align: center;
   }
   .header__square {
     position: absolute;
@@ -561,7 +612,7 @@ body {
     z-index: 200;
     position: relative;
     top: 1rem;
-    right: 1rem;
+    right: 3rem;
     background-color: red;
     border-radius: 50%;
     padding: 1rem;
@@ -622,15 +673,39 @@ body {
     font-size: 10rem;
   }
   .team__members {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-gap: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-width: 10rem;
   }
   .team__member {
+    width: 100% !important;
     -webkit-transform: none;
             transform: none;
+    margin-bottom: 1rem;
+  }
+  .section__header {
+    font-size: 4rem;
+  }
+  .footer {
+    padding: 50px 50px !important;
+    grid-column-gap: 1rem;
+  }
+  .footer__team {
+    -ms-flex-item-align: left;
+        -ms-grid-row-align: left;
+        align-self: left;
+    width: 150%;
   }
 }
 /*# sourceMappingURL=style.css.map */
