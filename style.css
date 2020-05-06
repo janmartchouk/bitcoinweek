@@ -208,38 +208,30 @@ body {
   line-height: 1;
 }
 
-.header__btn {
-  background-color: #f0c800;
-  -ms-grid-row: 10;
-  -ms-grid-row-span: 1;
-  grid-row: 10 / 11;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-column: 2 / 4;
-  height: 150%;
-  cursor: pointer;
-  font-family: Lekton;
-  color: #146eaa;
-  font-size: 4rem;
+.header__btns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 2.5%;
-  border-bottom: 10px solid #b99b03;
-  text-decoration: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: absolute;
+  bottom: 10rem;
+  width: 60vw;
+  left: 20vw;
 }
 
-.header__btn:active {
-  border-bottom-width: 1px;
-  height: calc(150% - 9px);
-  -webkit-transform: translateY(9px);
-          transform: translateY(9px);
+.header__btn {
+  background-color: #f0c800;
+  font-size: 2.5rem;
+  color: black;
+  font-family: Lekton;
+  padding: 1rem;
+  border-radius: 10px;
+  z-index: 100;
+  height: 100%;
+  text-decoration: none;
+  text-align: center;
+  width: auto;
 }
 
 .about {
@@ -398,6 +390,10 @@ body {
   grid-column: 5;
 }
 
+.mp {
+  margin-bottom: 10rem;
+}
+
 .mp__header {
   background-color: #f0c800;
 }
@@ -518,6 +514,12 @@ body {
       align-self: center;
 }
 
+.footer__member {
+  margin-bottom: .3rem;
+  position: relative;
+  top: -.5rem;
+}
+
 .footer__member > a {
   font-family: Lekton;
   font-size: 2rem;
@@ -549,6 +551,10 @@ body {
   .team {
     width: 90vw;
     margin: 40rem 5rem 10rem;
+  }
+  .events__list {
+    -webkit-columns: 1;
+            columns: 1;
   }
 }
 
@@ -598,6 +604,10 @@ body {
   .nav__list {
     display: none;
   }
+  .events__list {
+    -webkit-columns: 1;
+            columns: 1;
+  }
   .header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -620,15 +630,16 @@ body {
     width: 100vw;
   }
   .header__title::after {
-    content: "Frankfurt, 28. 08 bis 6. 09";
+    content: "Frankfurt, 28 Aug bis 6 Sep";
     font-family: Lekton;
     display: block;
-    font-size: 5rem;
+    font-size: 3rem;
     letter-spacing: 1;
     margin-top: 3rem;
     -webkit-transform: translateX(5%);
             transform: translateX(5%);
-    width: 70vw;
+    width: 70%;
+    margin-left: 10%;
     text-align: center;
   }
   .header__square {
@@ -739,7 +750,19 @@ body {
     -ms-flex-item-align: left;
         -ms-grid-row-align: left;
         align-self: left;
-    width: 150%;
+    width: 120%;
+  }
+  .header__btns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 70vw;
+    left: 15vw;
+    bottom: 0;
+  }
+  .header__btn {
+    margin-bottom: 3rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

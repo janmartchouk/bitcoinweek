@@ -72,23 +72,27 @@
         font-size: 2vw
         line-height: 1
 
+    &__btns
+        display: flex
+        justify-content: space-around
+        position: absolute
+        bottom: 10rem
+        width: 60vw
+        left: 20vw
+
     &__btn
         background-color: $yellow
-        grid-row: 10 / 11
-        grid-column: 2 / 4
-        height: 150%
-        cursor: pointer
+        font-size: 2.5rem
+        color: $black
         font-family: Lekton
-        color: $blue
-        font-size: 4rem
-        display: flex
-        justify-content: center
-        align-items: center
-        padding-top: 2.5%
-        border-bottom: 10px solid $darkyellow
+        padding: 1rem
+        border-radius: 10px
+        z-index: 100
+        height: 100%
         text-decoration: none
+        text-align: center
+        width: auto
 
-        &:active
-            border-bottom-width: 1px
-            height: calc(150% - 9px)
-            transform: translateY(9px)
+    &__register
+
+    &__sponsor
