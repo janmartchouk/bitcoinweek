@@ -19,7 +19,7 @@ body {
   margin-bottom: 5%;
   letter-spacing: 2.5;
   color: black !important;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
 }
 
 .section__content {
@@ -225,7 +225,7 @@ body {
   font-size: 2.5rem;
   color: black;
   font-family: Lekton;
-  padding: 1rem;
+  padding: 1rem 3rem;
   border-radius: 10px;
   z-index: 100;
   height: 100%;
@@ -261,11 +261,12 @@ body {
 .events__header {
   color: white !important;
   background-color: #146eaa;
+  margin-bottom: 0;
 }
 
 .events__list {
-  -webkit-columns: 2;
-          columns: 2;
+  -webkit-columns: 1;
+          columns: 1;
   text-align: left;
   position: relative;
   left: 20px;
@@ -274,17 +275,38 @@ body {
 .event {
   border-left: 5px solid #146eaa;
   position: relative;
+  padding-left: 20px;
+  padding-bottom: 5rem;
+}
+
+.event:last-of-type {
+  padding-bottom: 0;
+  border: none;
+  position: relative;
+  top: -5rem;
+}
+
+.event:last-of-type::before {
+  left: -13px;
+}
+
+.event:nth-last-of-type(2) {
+  padding-bottom: 10rem;
+}
+
+.event__empty::before {
+  display: none;
 }
 
 .event::before {
-  width: 2rem;
-  height: 2rem;
+  width: 4rem;
+  height: 4rem;
   content: "";
   background-color: #146eaa;
   border-radius: 100%;
   position: absolute;
-  left: -10px;
-  top: 30%;
+  left: -18px;
+  top: 22%;
 }
 
 .event:not(:nth-child(1)) {
@@ -296,7 +318,12 @@ body {
   text-decoration: none;
   color: black;
   font-size: 3rem;
-  padding: 0 2%;
+  position: relative;
+  left: 2%;
+}
+
+.event__link {
+  position: relative;
 }
 
 .event__link:hover {
@@ -307,7 +334,7 @@ body {
 .event__date {
   text-transform: italic;
   color: #818181;
-  padding-left: 20px;
+  display: block;
 }
 
 .highlights {
@@ -396,6 +423,7 @@ body {
 
 .mp__header {
   background-color: #f0c800;
+  margin-bottom: 5rem;
 }
 
 .mp .mp__wrap {
@@ -408,6 +436,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.mp__partner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .team {
@@ -591,9 +628,12 @@ body {
     margin: 0;
     padding: 50px 10%;
   }
+  .event::before {
+    left: -14px;
+  }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 560px) {
   html {
     font-size: 6px;
   }
@@ -630,7 +670,8 @@ body {
     width: 100vw;
   }
   .header__title::after {
-    content: "Frankfurt, 28 Aug bis 6 Sep";
+    content: " Frankfurt, \A 28 Aug - 6 Sep \A 2020";
+    white-space: pre;
     font-family: Lekton;
     display: block;
     font-size: 3rem;
@@ -641,6 +682,7 @@ body {
     width: 70%;
     margin-left: 10%;
     text-align: center;
+    line-height: 1;
   }
   .header__square {
     position: absolute;

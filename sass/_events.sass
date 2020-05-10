@@ -4,9 +4,10 @@
     &__header
         color: $white !important
         background-color: $blue
+        margin-bottom: 0
     
     &__list
-        columns: 2
+        columns: 1
         text-align: left
         position: relative
         left: 20px
@@ -15,16 +16,37 @@
     
     border-left: 5px solid $blue
     position: relative
+    padding-left: 20px
+    padding-bottom: 5rem
+
+    &:last-of-type
+        padding-bottom: 0
+        border: none
+        position: relative
+        top: -5rem
+
+        &::before
+            left: -13px
+
+    &:nth-last-of-type(2)
+        padding-bottom: 10rem
+
+
+    &__empty
+        &::before
+            display: none
+        
+        
 
     &::before
-        width: 2rem
-        height: 2rem
+        width: 4rem
+        height: 4rem
         content: ""
         background-color: $blue
         border-radius: 100%
         position: absolute
-        left: -10px
-        top: 30%
+        left: -18px
+        top: 22%
 
     &:not(:nth-child(1))
         margin-top: 0
@@ -36,15 +58,18 @@
         color: $black
         font-size: 3rem
         // padding: 1% 0 1% 25%
-        padding: 0 2%
+        position: relative
+        left: 2%
 
     &__link
         &:hover
             color: $blue
             text-decoration: underline
 
+        position: relative
+
     &__date
         text-transform: italic
         color: #818181
-        padding-left: 20px
+        display: block
 
