@@ -5,12 +5,25 @@
         color: $white !important
         background-color: $blue
         margin-bottom: 0
+        position: relative
     
     &__list
         columns: 1
         text-align: left
         position: relative
         left: 20px
+    
+    &__btn
+        font-family: Lekton !important
+        color: $black
+        text-decoration: none
+        background-color: $yellow
+        font-size: 2rem
+        letter-spacing: 1
+        padding: 1rem 2rem
+        position: absolute
+        bottom: 1.5rem
+        right: 1.5rem
         
 .event
     
@@ -72,4 +85,15 @@
         text-transform: italic
         color: #818181
         display: block
+        font-size: 2rem
+
+    &__desc
+        font-family: Lekton
+        font-size: 2rem
+        padding-left: 20px
+        width: 90%
+
+.nbevent
+    &::after
+        content: "Recommended"
 
