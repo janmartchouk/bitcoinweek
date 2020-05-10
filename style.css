@@ -64,6 +64,17 @@ body {
   display: none;
 }
 
+.nav__lang {
+  position: absolute;
+  right: 5rem;
+  color: white;
+  font-family: Lekton;
+  font-size: 3rem;
+  text-decoration: none;
+  background-color: #e63228;
+  padding: 0 1rem;
+}
+
 .nav__link {
   color: black;
   font-size: 2.5rem;
