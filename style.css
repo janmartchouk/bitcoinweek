@@ -344,6 +344,19 @@ body {
   padding-bottom: 10rem;
 }
 
+.event__tag::after {
+  content: "Recommended";
+  text-transform: uppercase;
+  background-color: #f0c800;
+  color: black;
+  line-height: 0;
+  padding: 0 1rem;
+  margin-left: 1rem;
+  font-size: 2rem;
+  position: relative;
+  bottom: .2rem;
+}
+
 .event__empty::before {
   display: none;
 }
