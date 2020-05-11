@@ -5,8 +5,17 @@
     padding: 50px 25%
     display: grid
     grid-template-columns: 1fr 1fr
-    grid-template-rows: 1fr
+    grid-template-rows: 1fr min-content
     grid-column-gap: 6rem
+    grid-row-gap: 6rem
+
+    &__disc
+        grid-row: 2 / 3
+        text-align: justify
+        grid-column: 1 / 3
+        color: white
+        font-family: Lekton
+        font-size: 1.5rem
 
     &__header
         color: $white !important

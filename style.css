@@ -66,13 +66,16 @@ body {
 
 .nav__lang {
   position: absolute;
-  right: 5rem;
+  right: 4rem;
+  top: 3.5rem;
   color: white;
   font-family: Lekton;
   font-size: 3rem;
   text-decoration: none;
   background-color: #e63228;
   padding: 0 1rem;
+  height: 5rem;
+  border-radius: 10px;
 }
 
 .nav__link {
@@ -239,7 +242,7 @@ body {
   padding: 1rem 3rem;
   border-radius: 10px;
   z-index: 100;
-  height: 100%;
+  height: 6rem;
   text-decoration: none;
   text-align: center;
   width: auto;
@@ -366,7 +369,7 @@ body {
 .event__desc {
   font-family: Lekton;
   font-size: 2rem;
-  padding-left: 20px;
+  padding-left: 2%;
   width: 90%;
 }
 
@@ -484,6 +487,12 @@ body {
           justify-content: center;
 }
 
+.mp__img {
+  max-width: 100%;
+  min-width: 100%;
+  height: auto !important;
+}
+
 .team {
   background-color: white;
   margin: 40rem 15vw 20rem;
@@ -547,9 +556,24 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
+  -ms-grid-rows: 1fr min-content;
+      grid-template-rows: 1fr -webkit-min-content;
+      grid-template-rows: 1fr min-content;
   grid-column-gap: 6rem;
+  grid-row-gap: 6rem;
+}
+
+.footer__disc {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2 / 3;
+  text-align: justify;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+  color: white;
+  font-family: Lekton;
+  font-size: 1.5rem;
 }
 
 .footer__header {
@@ -647,6 +671,9 @@ body {
     position: relative;
     top: 1rem;
     width: 50vw;
+  }
+  .header__btns {
+    top: 50vh;
   }
   .section {
     margin: 10% 5%;
@@ -837,11 +864,11 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 70vw;
-    left: 15vw;
-    bottom: 0;
+    top: 25vh;
   }
   .header__btn {
     margin-bottom: 3rem;
+    padding: 1rem 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
