@@ -47,15 +47,17 @@
     &__tag
         &::after
             content: "Recommended"
-            text-transform: uppercase
             background-color: $yellow
             color: $black
             line-height: 0
-            padding: 0 1rem
+            padding: .5rem 1rem
             margin-left: 1rem
             font-size: 2rem
             position: relative
             bottom: .2rem
+
+        &:hover
+            text-decoration: none !important
 
     &__empty
         &::before
@@ -87,10 +89,8 @@
         left: 2%
 
     &__link
-        margin-bottom: 1rem
         &:hover
             color: $blue
-            text-decoration: underline
 
         position: relative
 
@@ -106,4 +106,5 @@
         font-size: 2rem
         padding-left: 2%
         width: 90%
+        margin-top: 1rem
 
