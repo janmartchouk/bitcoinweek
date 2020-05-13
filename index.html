@@ -125,7 +125,7 @@
             </div>
         </div>
     </section> -->
-    
+    <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc2FX52Fq0odI2NeXSbe4bfon54Q6oT6DY85VXrWfp-KYmNRA/viewform?embedded=true" width="640" height="383" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
     <footer class="section footer" id="Contact">
         <div class="footer__info">
             <h2 class="section__header footer__header">Contact</h2>
@@ -144,8 +144,32 @@
                 <li class="footer__member"><a target="_blank" href="https://www.linkedin.com/in/jeff-gallas">Jeff Gallas</a></li>
             </ul>
         </div>
+        <!-- <div class="footer__formdiv">
+            <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSc2FX52Fq0odI2NeXSbe4bfon54Q6oT6DY85VXrWfp-KYmNRA/formResponse" class="footer__form">
+                <label>Sign up for Updates</label>
+                <input type="email" class="footer__email" />
+            </form>
+        </div> -->
+        
+    <!-- <script src="http://googleformrestyler.apixml.net/GoogleFormStyler.js"
+        form="https://docs.google.com/forms/d/e/1FAIpQLSc2FX52Fq0odI2NeXSbe4bfon54Q6oT6DY85VXrWfp-KYmNRA/viewform?embedded=true">
+    </script> -->
+    <script>
+        var ifrm = document.createElement("iframe");
+        ifrm.setAttribute("name", "swallow");
+        document.body.appendChild(ifrm);
+        ifrm.style.display = 'none';
+        document.forms[0].target="swallow";
+        var button = document.querySelectorAll("div[role='button']")[0];
+        button.addEventListener("click", function()
+        {
+            document.querySelectorAll("div[role='button']")[0].style.height = "0";
+        	return false;
+        }, true); 
+    </script>
         <h3 class="footer__disc">German Bitcoin Week is not the organisor of any event listed on this website. Further we are not responsible or liable for the content, availability, correctness, or accuracy of the linked pages, their offers, links, or advertisements.</h3>
     </footer>
     <script src="script.js"></script>
+
 </body>
 </html>

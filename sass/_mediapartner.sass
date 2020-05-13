@@ -8,15 +8,21 @@
 
     .mp__wrap
         width: 100%
-        display: grid
-        grid-auto-flow: column
-        grid-auto-columns: 1fr
-        grid-column-gap: 3rem
+        display: flex
+        justify-content: space-around
         align-items: center
+        flex-grow: 1
+        flex-basis: 0
 
     &__partner
         display: flex
-        justify-content: center
+        justify-content: space-around
+        align-items: flex-start
+        flex-grow: 1
+        flex-basis: 0
+        &:not(:first-of-type)
+            margin-left: 3rem
+
 
     &__img
         max-width: 100%
