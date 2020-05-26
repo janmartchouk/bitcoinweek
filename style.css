@@ -344,10 +344,19 @@ body {
   padding-bottom: 10rem;
 }
 
+.event__main::after {
+  content: "Lead Event";
+  background-color: #00825a;
+  color: white;
+}
+
+.event__focus::after {
+  content: "Bitcoin Focused";
+  background-color: #f08c28;
+  color: white;
+}
+
 .event__tag::after {
-  content: "Recommended";
-  background-color: #f0c800;
-  color: black;
   line-height: 0;
   padding: .5rem 1rem;
   margin-left: 1rem;
@@ -598,9 +607,56 @@ body {
   letter-spacing: 2;
 }
 
+.contactline {
+  background-color: #f0c800;
+  height: 15rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 25%;
+}
+
+#mc_embed_signup_scroll {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#mc_embed_signup_scroll label {
+  font-family: Lekton;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px 0 !important;
+}
+
+.email, input {
+  font-family: Lekton !important;
+  font-size: 1rem;
+}
+
+.email {
+  margin-right: 15px !important;
+}
+
 .footer {
   background-color: #146eaa !important;
-  width: 100vw;
+  width: 100%;
   margin: 0;
   padding: 50px 25%;
   display: -ms-grid;
@@ -809,6 +865,34 @@ body {
   }
   .event:last-of-type::before {
     left: -10px;
+  }
+  .contactline {
+    height: 25rem;
+    padding: 0 !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #mc_embed_signup_scroll {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .email {
+    margin-right: 0px !important;
   }
 }
 
