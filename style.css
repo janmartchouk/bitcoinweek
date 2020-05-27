@@ -644,6 +644,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 10px 0 !important;
+  text-align: left;
 }
 
 .email, input {
