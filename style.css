@@ -636,6 +636,7 @@ body {
   font-family: Lekton;
   -ms-flex-item-align: center;
       align-self: center;
+  justify-self: start;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -655,7 +656,7 @@ body {
 }
 
 #mc-embedded-subscribe {
-  background-color: #e63228 !important;
+  background-color: #146eaa !important;
   border-radius: 1rem !important;
 }
 
