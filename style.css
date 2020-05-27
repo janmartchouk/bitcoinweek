@@ -654,6 +654,11 @@ body {
   margin-right: 15px !important;
 }
 
+#mc-embedded-subscribe {
+  background-color: #e63228 !important;
+  border-radius: 1rem !important;
+}
+
 .footer {
   background-color: #146eaa !important;
   width: 100%;
