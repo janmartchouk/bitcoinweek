@@ -356,6 +356,12 @@ body {
   color: white;
 }
 
+.event__workshop::after {
+  content: "Workshop";
+  background-color: #e63228;
+  color: white;
+}
+
 .event__tag::after {
   line-height: 0;
   padding: .5rem 1rem;
