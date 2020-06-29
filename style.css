@@ -356,6 +356,18 @@ body {
   color: white;
 }
 
+.event__fun::after {
+  content: "Sports & Fun";
+  background-color: #f0c800;
+  color: black;
+}
+
+.event__mu::after {
+  content: "Meetup";
+  background-color: #146eaa;
+  color: white;
+}
+
 .event__workshop::after {
   content: "Workshop";
   background-color: #e63228;
