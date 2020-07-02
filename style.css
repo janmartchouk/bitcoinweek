@@ -222,6 +222,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 10%;
+  position: relative;
+  top: 5rem;
 }
 
 .header__desc {
@@ -229,6 +231,12 @@ body {
   color: black;
   font-size: 2vw;
   line-height: 1;
+}
+
+.header__desc::after {
+  content: "The Festival of Decentralisation";
+  display: block;
+  margin-top: 15%;
 }
 
 .header__btns {
@@ -956,6 +964,18 @@ body {
   .header__title {
     text-align: center;
     width: 100vw;
+  }
+  .header__title::before {
+    content: "The Festival \Aof Decentralisation";
+    font-family: Lekton;
+    display: inline-block;
+    font-size: 3rem;
+    letter-spacing: 1;
+    margin-top: 3rem;
+    width: 70%;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 10%;
   }
   .header__title::after {
     content: " Frankfurt, \A 28 Aug - 6 Sep \A 2020";
