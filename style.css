@@ -964,6 +964,8 @@ body {
   .header__title {
     text-align: center;
     width: 100vw;
+    position: relative;
+    top: -10%;
   }
   .header__title::before {
     content: "The Festival \Aof Decentralisation";
