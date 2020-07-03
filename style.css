@@ -977,7 +977,7 @@ body {
     width: 70%;
     text-align: center;
     line-height: 1;
-    margin-bottom: 10%;
+    margin-bottom: 3rem;
   }
   .header__title::after {
     content: " Frankfurt, \A 28 Aug - 6 Sep \A 2020";
@@ -986,7 +986,7 @@ body {
     display: block;
     font-size: 3rem;
     letter-spacing: 1;
-    margin-top: 3rem;
+    margin-top: 3.2rem;
     -webkit-transform: translateX(5%);
             transform: translateX(5%);
     width: 70%;
