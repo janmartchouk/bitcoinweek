@@ -1,4 +1,4 @@
-@media(max-width: 560px)
+@media(max-width: 650px)
     html
         font-size: 6px
 
@@ -19,6 +19,7 @@
         justify-content: center
         padding: 0
         position: relative
+        min-height: 315px
 
         &__title
             text-align: center
@@ -155,3 +156,22 @@
     .header__btn
         margin-bottom: 3rem
         padding: 1rem 1rem
+
+@media(max-height: 600px)        
+    .header__btns
+        display: none
+    .header__square
+        position: relative
+        top: 5rem
+    .body__btns
+        padding-top: 5rem
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+    .body__btn
+        width: 50%
+        margin-bottom: 2rem
+    .about
+        padding-top: 0
+        margin-top: 2.5rem

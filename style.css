@@ -134,6 +134,7 @@ body {
 
 .header {
   height: 100vh;
+  min-height: 600px;
   width: 100%;
   display: -ms-grid;
   display: grid;
@@ -278,6 +279,10 @@ body {
           justify-content: center;
 }
 
+.body__btns {
+  display: none;
+}
+
 .about {
   background-color: #f0c800;
   padding: 5%;
@@ -389,6 +394,7 @@ body {
   font-size: 2rem;
   position: relative;
   bottom: .2rem;
+  white-space: nowrap;
 }
 
 .event__tag:hover {
@@ -929,7 +935,7 @@ body {
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 650px) {
   html {
     font-size: 6px;
   }
@@ -960,6 +966,7 @@ body {
             justify-content: center;
     padding: 0;
     position: relative;
+    min-height: 315px;
   }
   .header__title {
     text-align: center;
@@ -1115,6 +1122,40 @@ body {
   .header__btn {
     margin-bottom: 3rem;
     padding: 1rem 1rem;
+  }
+}
+
+@media (max-height: 600px) {
+  .header__btns {
+    display: none;
+  }
+  .header__square {
+    position: relative;
+    top: 5rem;
+  }
+  .body__btns {
+    padding-top: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .body__btn {
+    width: 50%;
+    margin-bottom: 2rem;
+  }
+  .about {
+    padding-top: 0;
+    margin-top: 2.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
