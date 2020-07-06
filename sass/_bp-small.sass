@@ -157,15 +157,21 @@
         margin-bottom: 3rem
         padding: 1rem 1rem
 
-@media(max-height: 600px)        
+@media(max-height: 450px)
+    .header
+        position: relative
     .header__btns
-        display: none
+        position: absolute
+        bottom: -200px
+        left: 20%
     .header__square
         position: relative
         top: 5rem
+
+@media(max-height: 200)
     .body__btns
         padding-top: 5rem
-        display: flex
+        display: none
         flex-direction: column
         justify-content: center
         align-items: center
