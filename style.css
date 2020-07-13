@@ -359,7 +359,7 @@ body {
 .event__lastlink {
   position: relative;
   top: .5rem;
-  margin-right: 1rem;
+  margin-right: 3rem;
 }
 
 .event:nth-last-of-type(2) {
@@ -378,6 +378,7 @@ body {
   font-weight: bold;
   border-right: 5px solid #f08c28;
   border-bottom: 5px solid #f08c28;
+  white-space: nowrap;
 }
 
 .event__main::after {
