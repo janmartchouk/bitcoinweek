@@ -287,8 +287,10 @@ body {
 }
 
 .presented__header {
-  background-color: #f0c800;
+  background-color: white;
   margin-bottom: 5rem;
+  font-size: 3rem;
+  font-family: Lekton;
 }
 
 .presented__wrap {
@@ -324,7 +326,7 @@ body {
 
 .presented__img {
   width: 80%;
-  height: 7rem;
+  height: 10rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
